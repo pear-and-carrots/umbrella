@@ -1,0 +1,26 @@
+/* pages/saying/saying.wxss */
+page{
+  background-color: rgb(250, 248, 245);
+}
+
+.section{
+  margin: 20rpx;
+  height: 300rpx;
+  border: rgb(141, 164, 182)  1rpx solid ;
+  border-radius: 20rpx;
+  padding: 10rpx;
+  background-color: rgb(249, 244, 237); 
+}
+
+.btn{
+  margin-top: 10rpx;
+  float: right;
+  right: -10rpx;
+} 
+
+.tt{
+  height: 300rpx;
+  width: 95%;
+  padding: 5rpx;
+  margin: 0 auto;
+}

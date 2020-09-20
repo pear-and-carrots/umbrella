@@ -1,0 +1,27 @@
+/* pages/home_page/home_page.wxss */
+page{
+  height: 100%;
+  background-color:#eeedf4;
+}
+
+.umbrella{
+  margin-left: 40%;
+}
+
+image{
+  width: 150rpx;
+  height: 150rpx;
+  padding: 0rpx;
+  border: 5rpx solid rgb(182, 194, 221);
+  border-radius: 20rpx;
+
+}
+
+.t{
+  width: 170rpx;
+  border-radius: 20rpx;
+  margin-top: 20%;
+  text-align: center;
+}
+
+

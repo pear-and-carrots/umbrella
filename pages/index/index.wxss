@@ -1,0 +1,45 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  background-color:#E1DDED;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: rgb(175, 169, 169);
+}
+
+.user-motto{
+  color: rgb(226, 134, 134);
+  font-weight:600 ;
+}
+
+
+button{
+  font-size: 32rpx;
+  border: 1px solid #999;
+  background:  #f9e1f7;
+}
+
+.goStudy{
+  width: 220rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  border: 1rpx solid #999;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #f9e1f7;
+}

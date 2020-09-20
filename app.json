@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home_page/home_page",
+    "pages/discuss/discuss",
+    "pages/discuss/comment/comment",
+    "pages/discuss/swiper/swiper",
+    "pages/help/help",
+    "pages/register0/register0",
+    "pages/register1/register1",
+    "pages/register2/register2",
+    "pages/form/form",
+    "pages/logs/logs",
+    "pages/saying/saying"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E1DDED",
+    "navigationBarTitleText": "爱心伞",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home_page/home_page",
+        "text": "爱心伞",
+        "iconPath": "images/umbrella.png",
+        "selectedIconPath": "images/umbrella1.png"
+      },
+      {
+        "pagePath": "pages/discuss/discuss",
+        "text": "论坛",
+        "iconPath": "images/news.png",
+        "selectedIconPath": "images/news1.png"
+      },
+      {
+        "pagePath": "pages/help/help",
+        "text": "助力",
+        "iconPath": "images/help.png",
+        "selectedIconPath": "images/help1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

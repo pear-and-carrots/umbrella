@@ -1,0 +1,13 @@
+<!--components/comments/comments.wxml-->
+<block wx:for="{{showdata}}" wx:for-item="itemName" wx:for-index="id" wx:key="index">
+<view class="user">
+<view class="u1">
+<image src="/images/S13.jpg" class="m1"></image>
+<text class="m">:</text>
+</view>
+<view class="u2">
+<text class="discuss">{{itemName.content}}</text>
+</view>
+</view>
+</block>
+<view class="user"><text>{{aaa}}</text></view>

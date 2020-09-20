@@ -1,0 +1,38 @@
+<!--pages/form/form.wxml-->
+
+<!--button-->
+<view class="btn" bindtap="powerDrawer" data-statu="open">button</view> 
+  
+<!--mask-->
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view> 
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}"> 
+  
+ <!--drawer content-->
+ <view class="drawer_title">信息登记</view> 
+ <view class="drawer_content"> 
+  <view class="top grid"> 
+   <label class="title col-0">姓名</label> 
+   <input class="input_base input_h30 col-1" name="rName"></input> 
+  </view> 
+  <view class="top grid"> 
+   <label class="title col-0">班级</label> 
+   <input class="input_base input_h30 col-1" name="mobile"></input> 
+  </view> 
+  <view class="top grid"> 
+   <label class="title col-0">电话</label> 
+   <input class="input_base input_h30 col-1" name="phone"></input> 
+  </view> 
+  <view class="top grid"> 
+   <label class="title col-0">伞的编号</label> 
+   <input class="input_base input_h30 col-1" name="number"></input> 
+  </view> 
+  <view class="top bottom grid"> 
+   <label class="title col-0">备注</label> 
+   <input class="input_base input_h30 col-1" name="bz"></input> 
+  </view> 
+ </view> 
+ <view class="btn_ok" bindtap="powerDrawer" data-statu="close">提交</view> 
+
+ </view>

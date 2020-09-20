@@ -1,0 +1,14 @@
+<!--pages/help/help.wxml-->
+<image src="/images/S11.jpg" class="img1"></image>
+<view class="love">
+<text class="help" decode="true">&emsp;&emsp;助力爱心伞，即为“爱心伞”行动筹集发展资金，所得款项将用于破损伞的维修以及爱心伞活动未来的发展。此次募捐完全以自愿为原则，广大使用者可根据个人意愿进行募捐，每一分每一元都是心意。同时，本社在活动结束后会将相关款项情况及其去向公布于“GDOU爱心社”微信公众号上，方便广大使用者进行监督并反馈意见。</text>
+</view>
+
+
+<view class="help1">
+<text class="help2">扫码识别助力爱心伞⬇⬇⬇</text>
+<view class='view_img' >
+<image class='img' bindtap="previewImage" src='{{scene}}'></image></view>
+</view>
+
+<button bindtap="pay">我要助力爱心伞</button>

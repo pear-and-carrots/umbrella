@@ -1,0 +1,41 @@
+<!--pages/discuss/discuss.wxml-->
+<w-swiper list="{{banner}}" />
+
+<!-- <view class="section">
+  <form bindsubmit="bindFormSubmit">
+    <textarea placeholder="点击输入匿名评论..." name="textarea" class="tt" type="text" bindinput="input"/>
+    <button form-type="submit" size="mini" type="primary" class="btn"> 发表 </button>
+  </form>
+</view> -->
+
+<!-- <form bindsubmit="bindFormSubmit">
+<view class = "section">
+<input placeholder = "点击输入匿名评论。。。" name="textarea" class="tt" type="text" bindinput="input" />
+<button bindtap="goToBottom" form-type="submit" type = "primary" class="btn">发表</button>
+</view>
+</form> -->
+
+
+
+<view class="setion">
+<view class="input" catchtap='handleClick'><text>点击输入评论。。。</text></view>
+</view>
+
+
+<view class="line"></view>
+
+<view class="t"><text class="title">盐选评论</text></view>
+<!-- 
+<w-comment list="{{banner}}" /> -->
+<block wx:for="{{showdata}}" wx:for-item="itemName" wx:for-index="id" wx:key="index">
+<view class="user">
+<view class="u1">
+<image src="/images/S13.jpg" class="m1"></image>
+<text class="m">:</text>
+</view>
+<view class="u2">
+<text class="discuss">{{itemName.content}}</text>
+</view>
+</view>
+</block>
+<view class="bottom"><text>您已经浏览到底啦~</text></view>

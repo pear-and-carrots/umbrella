@@ -1,0 +1,38 @@
+/* pages/discuss/comment/comment.wxss */
+.user{
+  display: flex;
+  width:95%;
+  border-radius: 30rpx;
+  margin: 15rpx;
+  background-color: beige;
+}
+
+.u1{
+  width: 20%;
+}
+
+.u2{
+  height: 100%;
+  width: 75%;
+  background-color: rgb(245, 245, 232);
+  margin-top: 25rpx;
+  margin-bottom: 10rpx;
+  word-break: break-all;
+}
+
+.m1 {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 100%;
+  padding: 15rpx;
+  vertical-align: middle;
+}
+
+.discuss{
+  font-size: 32rpx;
+}
+
+.m{
+  font-size: 40rpx;
+  font-weight: 600;
+}

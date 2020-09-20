@@ -1,0 +1,167 @@
+/* pages/discuss/discuss.wxss */
+page{
+  height: 100%;
+  background-color:#ecf7f3;
+}
+
+swiper{
+  width: 95%;
+  height: 400rpx;
+  margin: 0 auto;
+  padding: 10rpx;
+}
+
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* .section{
+  margin: 20rpx;
+  height: 150rpx;
+  border: rgb(141, 164, 182)  1rpx solid ;
+  border-radius: 30rpx;
+  padding: 10rpx;
+  background-color: rgb(249, 244, 237);
+}
+
+.btn{
+  margin-top: 10rpx;
+  float: right;
+}
+
+.tt{
+  height: 150rpx;
+  width: 95%;
+  padding: 5rpx;
+  margin: 0 auto;
+} */
+
+/* .setion{
+  width: 100%;
+  z-index:2;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  background-color: #f8f8f8;
+  flex-direction: row;
+  height: 100rpx;
+}
+
+.setion input{
+  width: 78%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  border-bottom: 1rpx solid #d0d0d0;
+  padding-left: 20rpx;
+}
+
+.setion button{
+  border: 1px solid white;
+  width: 80px;
+  height: 80rpx;
+  background: #0c0;
+  color: white;
+  line-height: 80rpx;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  padding: 0 0.75em;
+  line-height: 2;
+  font-size: 16px;
+} */
+.t{
+  text-align: center;
+  margin: 10rpx;
+}
+.title{
+  font-size: 45rpx;
+  font-weight: 550;
+  color: rgb(117, 157, 135);
+}
+
+.setion{
+  height: 85rpx;
+  width: 100%;
+  position: fixed;  
+  bottom: 0rpx;
+  background-color: #fff;
+}
+
+.setion .input{
+  width: 98%;
+  height: 70rpx;
+  margin:10rpx;
+  border-radius: 20rpx;
+  background-color: rgb(231, 243, 242);
+  position: relative;
+}
+
+.input text{
+  font-size: 35rpx;
+  color: rgb(150, 147, 147);
+  position: absolute;
+  margin-top: 10rpx;
+  left: 20rpx;
+}
+
+.line{
+  border-top: solid 1rpx rgb(187, 186, 186);
+  margin-top: 20rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10rpx;
+  height: 1rpx;
+  
+}
+.user{
+  display: flex;
+  width:95%;
+  border-radius: 30rpx;
+  margin: 15rpx;
+  background-color: beige;
+}
+
+.u1{
+  width: 20%;
+}
+
+.u2{
+  height: 100%;
+  width: 75%;
+  background-color: rgb(245, 245, 232);
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  word-break: break-all;
+}
+
+.m1 {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 100%;
+  padding: 15rpx;
+  vertical-align: middle;
+}
+
+.discuss{
+  font-size: 32rpx;
+}
+
+.m{
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+.bottom{
+  margin: 50rpx;
+  height: 100rpx;
+  text-align: center;
+}
+
+.bottom text{
+  font-size: 28rpx;
+  color: #999;
+}

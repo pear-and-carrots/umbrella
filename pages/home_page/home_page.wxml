@@ -1,0 +1,21 @@
+<!--pages/home_page/home_page.wxml-->
+<view class="umbrella">
+
+<view class="t">
+<image src="/images/S2.jpg" class="umbrella1"  onclicl bing:tap="handleShowModal">\n</image>
+<button size="mini" bind:tap="handleShowModal" class="btn1">借</button> 
+</view>
+
+<view class="t">
+<image src="/images/S6.jpg" class="umbrella3">\n</image>
+<button size="mini" bind:tap="handleClick1" class="btn3">续</button>
+</view>
+
+<view class="t">
+<image src="/images/S1.jpg" class="umbrella2">\n</image>
+<button size="mini" bind:tap="handleClick2" class="btn2">归</button>
+</view>
+
+</view>
+
+
