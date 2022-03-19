@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "w-swiper":"/pages/discuss/swiper/swiper",
-    "w-comment":"/pages/discuss/comment/comment"
-  },
-  "navigationBarBackgroundColor": "#9AD1AD"
-}

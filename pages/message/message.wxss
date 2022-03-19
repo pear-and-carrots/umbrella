@@ -1,0 +1,92 @@
+page {
+  height: 100%;
+  background-color: #eeedf4;
+}
+
+/* 
+.messageBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.messageImg{
+  width: 800rpx;
+  margin-top: 100rpx;
+}
+
+.textArea{
+  width: 420rpx;
+  height: 300rpx;
+  padding: 20rpx;
+  color: #5c5858;
+  font-size: 32rpx;
+  margin-top: -440rpx;
+}*/
+
+.submit {
+  margin-top: 70rpx;
+  width: 150rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #eeedf4;
+  font-size: 30rpx;
+  font-weight: 700;
+  background-color: #9890c5;
+  border-radius: 20rpx;
+}
+
+.listBox {
+  padding: 50rpx;
+  margin: 4%;
+  background-color: #fff;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notice {
+  width: 94%;
+  padding: 40rpx;
+  font-size: 28rpx;
+  background-color: rgb(243, 243, 243);
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+  color: #666666;
+}
+
+.radio-group {
+  width: 94%;
+  margin-bottom: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx dashed #666666;
+}
+
+.radio {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  /* color: ; */
+}
+
+.radio textarea {
+  border-radius: 10rpx;
+  padding: 20rpx;
+  background-color: rgb(247, 247, 247);
+}
+
+.textarea{
+  width: 93%;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  background-color: rgb(247, 247, 247);
+}
+
+.question {
+  margin-bottom: 20rpx;
+}

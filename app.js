@@ -2,10 +2,30 @@
 App({
   globalData:{
     appid:'wx319356942ae9d9c5',
-    secret:'106b0d6402a1144f3d3cf56f183cab39',
+    secret:'106b0d6402a1144f3d3cf56f183cab39'
   },
 
   onLaunch: function () {
+    // wx.cloud.init({
+    //   env:"aixinsan-53y7b"
+    // })
+    this.globalData = {
+     
+    }
+
+
+    // wx.cloud.callFunction({
+    //   name: 'login',
+    //   data: {},
+    //   success: res => {
+    //     this.globalData.openid = res.result.openid
+    //   },
+    //   fail: err => {
+    //     console.error('[云函数] [login] 调用失败', err)
+    //   }
+    // })
+
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -19,29 +39,18 @@ App({
         var appId = 'wx319356942ae9d9c5';
         var secret = '106b0d6402a1144f3d3cf56f183cab39';
         console.log("2222222222",res)
-        console.log("这就是我的code："+res.code)
+        console.log("这就是我的code："+code)
+        wx.setStorageSync('code', res.code)
 
-        wx.setStorageSync('code', code)
-        
-        wx.request({
-          url: 'https://api.weixin.qq.com/sns/jscode2session?appid=' + appId + '&secret=' + secret + '&js_code=' + code + '&grant_type=authorization_code',
-          data: {
-          },
-          header: {
-          'content-type': 'application/json' // 默认值
-          },
-          success (res) {
-            var openid = res.data.openid;
-           console.log('请求获取的openid：'+openid);
-           wx.setStorageSync('openId', openid)
-          },
-          fail(res){wx.reLaunch({url:'/pages/index/index'})},
-
-          if(openid = undefined){
-            wx.reLaunch({
-              url: '/pages/index/index',
-            })
-          }
+          wx.request({
+            url: 'https://www.haichuang8888.com:8181/wechat/code',
+            data:{
+              code:code
+            },
+            success(e){
+              console.log('后台请求的openid:',e.data.msg)
+              wx.setStorageSync('openId',e.data.msg+"")
+            } 
           })
       }
     })
@@ -62,11 +71,14 @@ App({
               console.log("encryptedData在这里"+res.encryptedData)
               console.log("iv在这里"+res.iv)
               console.log('zyyy',wx.getStorageSync('code'))
-              //console.log(this.globalData.userInfo)
+              // this.globalData.openid=wx.getStorageSync('code')
+              // console.log(this.globalData.openid)
+              
               wx.request({
 
                 //url:'http://172.16.13.73:8254/umbrella/umbrella/user',
-               url: 'https://www.lidengyin666.top:8254/umbrella/user', //自己的服务接口地址
+              //  url: 'https://www.lidengyin666.top:8254/umbrella/user', //自己的服务接口地址
+               url: 'https://www.haichuang8888.com', //自己的服务接口地址
                 method: 'GET',
                 header: {
                   'content-type': 'application/json'

@@ -1,7 +1,7 @@
 /**index.wxss**/
-page{
+page {
   height: 100%;
-  background-color:#E1DDED;
+  background-color: #E1DDED;
 }
 
 .userinfo {
@@ -21,19 +21,20 @@ page{
   color: rgb(175, 169, 169);
 }
 
-.user-motto{
+.user-motto {
   color: rgb(226, 134, 134);
-  font-weight:600 ;
+  font-weight: 600;
 }
 
 
-button{
+button {
   font-size: 32rpx;
-  border: 1px solid #999;
-  background:  #f9e1f7;
+  border: 1px dashed #999;
+  color: rgb(90, 87, 87);
+  background: #f9e1f7;
 }
 
-.goStudy{
+.goStudy {
   width: 220rpx;
   height: 80rpx;
   font-size: 28rpx;

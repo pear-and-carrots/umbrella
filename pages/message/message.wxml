@@ -1,0 +1,23 @@
+<!-- <view class="messageBox">
+  <image class="messageImg" src="../../images/message1.png" mode="widthFix"></image>
+  <textarea auto-focus bindinput="bindtext" class="textArea"></textarea>
+  <view class="submit" bindtap="submit">反馈</view>
+</view> -->
+
+<!-- 问卷 -->
+<view class="listBox">
+<view class="notice">{{list[0].subject.name}}</view>
+<radio-group class="radio-group" bindtap="radioChange" data-subjectId="{{item.subject.subjectId}}" wx:for="{{list}}" wx:if="{{item.subject.id > 1 && item.subject.id < list.length}}" wx:key="{{item.subject.id}}">
+  <label class="weui-cell weui-check__label">
+    <view class="question">{{item.subject.name}}</view>
+    <view class="radio" wx:for="{{item.subsm}}" bindtap="name" data-subsmid="{{item.subsmId}}" data-name="{{item.name}}">
+      <radio value="{{item.name}}" wx:if="{{item.name.length > 1}}" color="#9487b8"/>
+      <textarea wx:if="{{item.name.length <= 1}}" bindinput="bindtext"></textarea>
+      <view class="radioName">{{item.name}}</view>
+    </view>
+  </label>
+  <textarea class="textarea" wx:if="{{item.subject.subjectId == 'd863fb3b-7127-4a21-a9d5-c322a0a17c57' && istext == true}}" bindinput="text"></textarea>
+</radio-group>
+<view class="submit" bindtap="submit">反馈</view>
+</view>
+

@@ -1,47 +1,18 @@
-// pages/help/help.js
-
-var app = getApp();
+// pages/home_page/licence/licence.js
 Page({
 
   /**
    * 页面的初始数据
    */
-  pay:function(){
-    wx.requestPayment({
-      timeStamp: '',
-      nonceStr: '',
-      package: '',
-      signType: 'MD5',
-      paySign: '',
-      success (res) { 
-        wx.showToast({
-          title: '成功了',
-        })
-        console.log("2222222111")
-      },
-      fail (res) { }
-    })
-  },
-
   data: {
-    scene:''
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
-    var scene_img = '/images/pay3.jpg'
-    that.setData({
-      scene:scene_img
-    })
-  },
 
-  previewImage:function(e){
-    wx.previewImage({
-      urls: this.data.scene.split(',')
-    })   
   },
 
   /**

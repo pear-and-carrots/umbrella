@@ -24,4 +24,130 @@ image{
   text-align: center;
 }
 
+.tips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
 
+.tips .tips_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  height: auto;
+  border-radius: 45rpx;
+  background: #fff;
+  overflow: hidden;
+}
+
+.tips .tips_box .hint_view {
+  display: flex;
+  align-items: center;
+}
+
+.tips .tips_box .hint_view .text {
+  display: flex;
+  flex-direction: column;
+  margin: 12rpx 24rpx;
+}
+
+.tips .tips_box .hint1 {
+  margin-top: 38rpx;
+  text-align: center;
+  font-size: 27rpx;
+  color: #1a1a1a;
+  line-height:52rpx;
+  border-bottom:1px solid;
+}
+
+.agreeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32rpx 0 32px;
+  width: 70%;
+  line-height: 64rpx;
+  border-radius: 80rpx;
+  font-size: 28rpx;
+  letter-spacing: 6rpx;
+  color: #fff;
+}
+.isTipShow {
+display: block;
+}
+
+.isTipHide {
+display: none;
+}
+
+.text123{
+  font-size: 28rpx;
+  color: #696969;
+}
+
+
+
+/* 公告 */
+.notice{
+  /* width: 96%; */
+  background-color: #fff;
+  margin-top: 20rpx;
+  margin-right: 2%;
+  margin-left: 2%;
+  height: 70rpx;
+  display:flex;
+  align-self: center;
+  /* 上下居中 */
+  align-items: center;
+  /* 平均放在主格方向 */
+  justify-content: space-between;
+  border-radius: 10rpx;
+  box-shadow: 2px 2px 2px 2px #8888;
+}
+
+.notice_1{
+  height:70rpx;
+  width:15%;
+  font-size: 35rpx;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  border-right: 5rpx solid #8888;
+}
+
+.notice_2{
+  height:70rpx;
+  width:82%;
+  font-size: 29rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ee{
+  display: flex;
+  align-items: center;
+}
+
+/* 意见箱 */
+.message{
+  position: fixed;
+  bottom: 50rpx;
+  right: 30rpx;
+}
+
+.message image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+}

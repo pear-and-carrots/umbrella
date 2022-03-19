@@ -23,5 +23,10 @@
 </view>
 
 </form>
+
 </view>
 
+<view class="setion" bindtap="phone">
+	<image src="../../images/dianhua.png" class="img"></image>
+	<text>客服电话：17323904108</text>
+</view>

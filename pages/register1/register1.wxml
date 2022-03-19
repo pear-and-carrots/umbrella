@@ -1,19 +1,13 @@
 <!--pages/register/register.wxml-->
 <view class="register">
 <form bindsubmit="submitForm" bindreset="resetForm">
-<view class="title">借记信息填写</view>
+<view class="title">续借信息填写</view>
 <view class="detial">雨伞站点:</view>
 <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
 <view class="input">{{array[index]}}</view>
 </picker>
-<view class="detial">姓名:</view>
-<input bindinput="input" class="input" name="username" placeholder="请输入..." auto-focus type="text" />
-<view class="detial">专业班级:</view>
-<input bindinput="input" class="input" name="grade" placeholder="请输入..." type="text" />
 <view class="detial">学号:</view>
 <input bindinput="input" class="input" name="student_number" placeholder="请输入..." maxlength="12" type="number" />
-<view class="detial">电话:</view>
-<input bindinput="input" class="input" name="tel" placeholder="请输入..." maxlength="11" type="number" />
 <view class="detial">伞的编号:</view>
 <input bindinput="input" class="input" name="number" placeholder="请输入..." type="text" />
 
@@ -25,3 +19,7 @@
 </form>
 </view>
 
+<view class="setion" bindtap="phone">
+	<image src="../../images/dianhua.png" class="img"></image>
+	<text>客服电话：17323904108</text>
+</view>

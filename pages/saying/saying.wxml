@@ -1,8 +1,0 @@
-<!--pages/saying/saying.wxml-->
-
-<view class="section">
-  <form bindsubmit="bindFormSubmit">
-    <textarea placeholder="点击输入匿名评论..." name="textarea" class="tt" type="text" bindinput="input"/>
-    <button form-type="submit" size="mini" type="primary" class="btn"> 发表 </button>
-  </form>
-</view>

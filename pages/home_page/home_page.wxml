@@ -1,21 +1,67 @@
 <!--pages/home_page/home_page.wxml-->
+<view class="notice">
+  <view class="notice_1">公告</view>
+  <view class="shu_line"></view>
+  <swiper autoplay interval="2000" circular vertical class="notice_2">
+    <swiper-item class="ee">
+      <view>雨天有我在，护你周全，保你欢喜。</view>
+    </swiper-item>
+    <swiper-item class="ee">
+      <view>铁汁将伞放在对应区域能减少工作人员负担哟~</view>
+    </swiper-item>
+    <swiper-item class="ee">
+      <view>“你一笑，全世界都像是晴天”</view>
+    </swiper-item>
+    <swiper-item class="ee">
+      <view>借伞归伞记得填好详情信息哟~</view>
+    </swiper-item>
+    <swiper-item class="ee">
+      <view>可以帮忙把伞折一下嘛</view>
+    </swiper-item>
+  </swiper>
+</view>
+
 <view class="umbrella">
 
 <view class="t">
-<image src="/images/S2.jpg" class="umbrella1"  onclicl bing:tap="handleShowModal">\n</image>
+<image bind:tap="handleShowModal" src="/images/S2.jpg" class="umbrella1"  onclicl bing:tap="handleShowModal">\n</image>
 <button size="mini" bind:tap="handleShowModal" class="btn1">借</button> 
 </view>
 
 <view class="t">
-<image src="/images/S6.jpg" class="umbrella3">\n</image>
+<image bind:tap="handleClick1" src="/images/S6.jpg" class="umbrella3">\n</image>
 <button size="mini" bind:tap="handleClick1" class="btn3">续</button>
 </view>
 
 <view class="t">
-<image src="/images/S1.jpg" class="umbrella2">\n</image>
+<image bind:tap="handleClick2" src="/images/S1.jpg" class="umbrella2">\n</image>
 <button size="mini" bind:tap="handleClick2" class="btn2">归</button>
 </view>
 
+</view>
+
+<navigator url="../message/message" class="message">
+<image src="../../images/message.png"></image>
+</navigator>
+
+<view wx:if='{{userAgree==false}}'>
+  <view catchtouchmove="catchtouchmove" class="tips">
+    <view class="tips_box">
+      <view class="hint_view">
+        <view class="text">
+          <text class="text123">本项目借伞功能需收集用户个人信息作为业务需要, 我信息收集完全遵守小程序隐私规范, 具体用途如下:\n
+   (a) 学生班级, 手机作为归还雨伞失败或延期的通讯手段\n
+   (b) 学生学号, 学生姓名作为借伞业务限制借伞,续借次数手段\n
+   (c) 微信用户唯一编号, 作为向用户发送一次性授权手段\n
+   (d) 用户一次性授权, 作为进行雨伞催促归还的条件\n
+我项目收集之信息,  当归还雨伞之后, 我们会将历史数据在物理层面删除\n
+如果您同意我们的用户授权请求, 则可以继续</text>
+          <view class="hint1" bindtap='goToUserLicence'>点击查看隐私及授权协议</view>
+        </view>
+      </view>
+      <button bindtap='tipAgree' class="agreeBtn" type='primary' size="mini">我已阅读并同意</button>
+    </view>
+  </view>
 </view>
 
 
